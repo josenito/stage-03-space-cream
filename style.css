@@ -63,9 +63,11 @@ header h1 {
 }
 
 main {
-  display: grid;
-  justify-content: center;
-  gap: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 2rem;
 }
 
 main p {
@@ -79,6 +81,10 @@ main p {
 }
 
 .card-wrapper {
+  display: grid;
+  justify-content: center;
+  gap: 3.2rem;
+
   animation: downtop 700ms 350ms backwards;
 }
 
@@ -118,7 +124,8 @@ main p {
   align-items: center;
   justify-content: center;
 
-  animation: topdown 700ms 750ms backwards;
+  animation: topdown 700ms;
+  animation: downtop 700ms 750ms backwards;
 }
 
 @keyframes topdown {
