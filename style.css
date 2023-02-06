@@ -207,7 +207,7 @@ footer p a:hover {
 
 
 
-@media (min-width: 860px) {
+@media (min-width: 975px) {
 
   header {
     max-width: 37.7rem;
@@ -265,13 +265,15 @@ footer p a:hover {
   main {
     padding-top: 6.4rem;
     padding-bottom: 1rem;
-    padding-left: 8rem;
     padding-right: 8.1rem;
 
     grid-template-areas:
       "A B"
-      "C C"
-      "D D";
+      "C B"
+      "C D"
+      "E F"
+      "G G";
+
   }
 
   main div:nth-child(1) {
@@ -283,12 +285,24 @@ footer p a:hover {
   }
 
   main div:nth-child(3) {
+    grid-area: D;
+  }
+
+  main div:nth-child(4) {
     grid-area: C;
   }
 
+  main div:nth-child(5) {
+    grid-area: E;
+  }
+
+  main div:nth-child(6) {
+    grid-area: F;
+  }
+
   main footer {
-    margin-top: 5rem;
-    grid-area: D;
+    margin-bottom: 3rem;
+    grid-area: G;
   }
 
   footer {
@@ -298,7 +312,7 @@ footer p a:hover {
 }
 
 
-@media (min-width: 1140px) {
+@media (min-width: 1212px) {
 
   header {
     max-width: 37.7rem;
@@ -344,14 +358,8 @@ footer p a:hover {
     max-width: 22rem;
   }
 
-  .card h2,
-  .imgMobile {
+  .card h2 {
     display: none;
-  }
-
-  .imgDesktop {
-    margin-top: 3.2rem;
-    display: block;
   }
 
   main {
@@ -361,7 +369,10 @@ footer p a:hover {
 
     grid-template-areas:
       "A B C"
-      "D D D";
+      "D B E"
+      "D F E"
+      "G G G";
+
   }
 
   main div:nth-child(1) {
@@ -376,9 +387,21 @@ footer p a:hover {
     grid-area: C;
   }
 
-  main footer {
-    margin-top: 5rem;
+  main div:nth-child(4) {
     grid-area: D;
+  }
+
+  main div:nth-child(6) {
+    grid-area: E;
+  }
+
+  main div:nth-child(5) {
+    grid-area: F;
+  }
+
+  main footer {
+    margin-bottom: 3rem;
+    grid-area: G;
   }
 
   footer {
