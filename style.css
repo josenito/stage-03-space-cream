@@ -59,6 +59,10 @@ header {
   padding: 3.2rem 0 0;
 }
 
+.imageDesktop {
+  display: none;
+}
+
 header img {
   width: 13.7rem;
   height: 13.7rem;
@@ -209,6 +213,16 @@ footer p a:hover {
     max-width: 37.7rem;
   }
 
+  .imageMobile {
+    display: none;
+  }
+
+  .imageDesktop {
+    display: block;
+    width: 21.4rem;
+    height: 16.7rem;
+  }
+
   .description {
     background-color: var(--bg-secondary);
     padding-left: 3rem;
@@ -289,6 +303,16 @@ footer p a:hover {
   header {
     max-width: 37.7rem;
     padding-bottom: 12rem;
+  }
+
+  .imageMobile {
+    display: none;
+  }
+
+  .imageDesktop {
+    display: block;
+    width: 21.4rem;
+    height: 16.7rem;
   }
 
   .description {
