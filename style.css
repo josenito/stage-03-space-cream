@@ -27,7 +27,7 @@
 
   --fc-heading: #FFFFFF;
   --fc-texting: #23053A;
-  --fc-butons: #4A4E69;
+  --fc-buttons: #4A4E69;
 }
 
 body {
@@ -137,7 +137,7 @@ main {
   right: 1.5rem;
 
   font-family: var(--ff-heading);
-  color: var(--fc-butons);
+  color: var(--fc-buttons);
   line-height: 3.4rem;
 
   width: 11.2rem;
@@ -166,7 +166,7 @@ footer {
 
 footer p,
 footer p a {
-  color: var(--fc-butons);
+  color: var(--fc-buttons);
 }
 
 footer p a {
